@@ -245,6 +245,51 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+/* Experience & Volunteering Grid */
+.experience-grid,
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Style */
+.experience-card,
+.volunteer-card {
+    background: var(--card-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.experience-card:hover,
+.volunteer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.experience-card h3,
+.volunteer-card h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.experience-card .year,
+.volunteer-card .year {
+    font-weight: 600;
+    color: #777;
+}
+
+.experience-card .organization,
+.volunteer-card .organization {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
 	text-align: center;
